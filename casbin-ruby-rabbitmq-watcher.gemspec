@@ -4,7 +4,7 @@ $LOAD_PATH.push File.expand_path('lib', __dir__)
 require 'casbin-ruby-rabbitmq-watcher/version'
 
 Gem::Specification.new do |s|
-  s.name     = "casbin-ruby-rabbitmq-watcher"
+  s.name     = 'casbin-ruby-rabbitmq-watcher'
   s.version  = CasbinRubyRabbitmqWatcher::VERSION
   s.platform = Gem::Platform::RUBY
   s.authors  = ['Igor Kutyavin', 'Aleksandr Kirillov']
@@ -18,6 +18,8 @@ Gem::Specification.new do |s|
 
   s.files =      %w[README.md] + Dir.glob(File.join('lib', '**', '*.rb'))
   s.test_files = Dir.glob(File.join('spec', '**', '*.rb'))
+
+  s.add_dependency 'bunny'
 
   s.add_development_dependency 'rspec', '~> 3.10'
   s.add_development_dependency 'rubocop', '>= 1.8'
