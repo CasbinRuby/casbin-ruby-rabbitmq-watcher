@@ -9,7 +9,7 @@ gem 'casbin-ruby-rabbitmq-watcher'
 ```
 
 ### Basic Usage
-```
+```ruby
 require 'casbin-ruby'
 require 'casbin-ruby-rabbitmq-watcher'
 
