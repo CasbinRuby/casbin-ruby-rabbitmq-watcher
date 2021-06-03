@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-module CasbinRubyRabbitmqWatcher
+module CasbinWatcher
   require 'casbin-ruby-rabbitmq-watcher/version'
-  require 'casbin-ruby-rabbitmq-watcher/rabbitmq_watcher'
+  require 'casbin-ruby-rabbitmq-watcher/rabbitmq'
 end

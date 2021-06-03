@@ -5,7 +5,7 @@ require 'casbin-ruby-rabbitmq-watcher/version'
 
 Gem::Specification.new do |s|
   s.name     = 'casbin-ruby-rabbitmq-watcher'
-  s.version  = CasbinRubyRabbitmqWatcher::VERSION
+  s.version  = CasbinWatcher::VERSION
   s.platform = Gem::Platform::RUBY
   s.authors  = ['Igor Kutyavin', 'Aleksandr Kirillov']
   s.email    = %w[konayre@evrone.com kirillov@evrone.com]

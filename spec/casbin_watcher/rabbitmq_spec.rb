@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require 'casbin-ruby-rabbitmq-watcher/rabbitmq_watcher'
+require 'casbin-ruby-rabbitmq-watcher/rabbitmq'
 
 class TestQueue
   def bind(_exchange); end
@@ -22,7 +22,7 @@ class TestChannel
   end
 end
 
-describe CasbinRubyRabbitmqWatcher::RabbitmqWatcher do
+describe CasbinWatcher::Rabbitmq do
   let(:exchange) { TestExchange.new }
   let(:queue) { TestQueue.new }
 

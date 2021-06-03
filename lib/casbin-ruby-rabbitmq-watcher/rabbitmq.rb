@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
-module CasbinRubyRabbitmqWatcher
-  class RabbitmqWatcher
+module CasbinWatcher
+  class Rabbitmq
     RABBIT_EXCHANGE_NAME = 'casbin-role-watcher'
 
     attr_accessor :update_callback
