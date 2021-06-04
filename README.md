@@ -17,7 +17,7 @@ enforcer = Casbin::Enforcer.new("path/to/model.conf", "path/to/policy.csv")
 conn = Bunny.new
 channel = conn.create_channel
 watcher = CasbinWatcher::Rabbitmq.new(channel)
-watcher.set_update_callback(enforcer.e.load_policy)
+watcher.update_callback = -> { enforcer.load_policy }
 enforcer.watcher = watcher
 
 ```
